@@ -1,0 +1,144 @@
+
+
+.instructors_sections {
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+
+}
+
+.container_instructors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.instructors_head {
+    padding: 6rem;
+}
+
+
+.instructors_head h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-logo);
+    margin-bottom: 2rem;
+
+
+}
+
+.instructors_head p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+    line-height: 2rem;
+}
+
+
+
+.instructors {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 4rem;
+}
+
+.instructors_images h4 {
+    font-size: 1.2rem;
+    color: var(--color-logo);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.instructors_images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+img.rounds {
+    border-radius: 50%;
+}
+
+/* ========== MEDIA ========== */
+
+@media screen and (max-width: 1200px) {
+    .instructors_sections {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .instructors_head h1 {
+        font-size: 2rem;
+    }
+    .instructors_head p {
+        font-size: 1.2rem;
+    }
+    .instructors {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .instructors_sections {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .instructors_head h1 {
+        font-size: 1rem;
+    }
+    .instructors_head p {
+        font-size: 1rem;
+    }
+    .instructors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .instructors_sections {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .instructors_head h1 {
+        font-size: 1rem;
+    }
+    .instructors_head p {
+        font-size: 1rem;
+    }
+    .instructors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .instructors_sections {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .instructors_head h1 {
+        font-size: 1rem;
+    }
+    .instructors_head p {
+        font-size: 1rem;
+    }
+    .instructors {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+

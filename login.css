@@ -1,0 +1,146 @@
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    background: #f7faf9;
+    border-radius: 15px;
+}
+
+.center h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+
+
+}
+
+.center h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid var(--color-bg1);
+    font-weight: 400;
+
+}
+
+.center form {
+    padding: 20px 40px;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding-left: 27px;
+}
+
+.txt_field i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    padding: 5px 5px;
+    color: var(--color-text-light);
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.6s;
+}
+
+.txt_field .txt_field span::before {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-logo);
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -10px;
+    left: 5px;
+    color: var(--color-bg1);
+    font-size: 14px;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: 10px 0 20px 5px;
+    color: var(--color-logo);
+    cursor: pointer;
+}
+.pass :hover {
+    text-decoration: underline;
+
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50%;
+    border: 1px solid var(--color-bg1);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--color-bg1);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+
+input[type="submit"]:hover {
+
+    border-color: var(--color-logo);
+    transition: 0.6s;
+}
+
+.signup_link {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-logo);
+}
+
+.signup_link a {
+    color: var(--color-logo);
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+    color: var(--color-bg1);
+}
+
+
+@media screen and (max-width: 500px) {
+    .center {
+        width: 100%;
+        height: 100%;
+
+    }
+}

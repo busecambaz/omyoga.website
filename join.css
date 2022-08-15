@@ -1,0 +1,94 @@
+.join_section {
+    overflow: hidden;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.join_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.join_title {
+    margin-bottom: 2rem;
+}
+
+.join_title h1{
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+}
+
+.join_title p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--color-text-light);
+    line-height: 2rem;
+}
+
+.join_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+
+
+}
+
+.join {
+    background-color: #faf5f3;
+    padding: 45px 20px 30px 20px;
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    color: var(--color-logo);
+
+
+}
+
+.join h3{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.join h4 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+
+}
+
+.join .primary {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--color-logo);
+    color: var(--color-logo);
+}
+
+.join .primary:hover {
+    transition: all .3s ease-in-out;
+    background: var(--color-bg1);
+    color: var(--color-white);
+    border: transparent;
+}
